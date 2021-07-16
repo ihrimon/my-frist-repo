@@ -1,27 +1,144 @@
-h3 {
-    color: blue;
-    background-color: rgb(235, 235, 235);
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 40px;
+/* <!-------------- Fonts --------------> */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
 }
-p {
-    color: rgb(61, 61, 61);
-    background-color: rgb(221, 221, 221);
-    margin:40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 40px;
-   
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: 
+    #575757;
 }
-a {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 40px;
+p{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
 }
-ul {
-    margin: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+
+/* <!-------------- Common Styles --------------> */
+
+
+/* <!-------------- Header Section For Styles --------------> */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-input {
-    color: blue;
-    font-family: Arial, Helvetica, sans-serif;
+.heading{
+    width: 600px;
+    height: 455px;
+    border: 1px dotted;
+}
+.heading h1{
+    font-weight: 700;
+    font-Size: 60px;
+    Line-height: 78px;
+    margin-bottom: 40px;
+}
+.heading p{
+    width: 520px;
+    margin-bottom: 49px;
+}
+.link-button{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: 
+    #FFFFFF;
+    padding: 12px 20px;
+    background-image: linear-gradient(#FBA24F
+, #FF1E1E);
+    border-radius: 50px;
+    box-shadow: 0px 2px 30px rgba(252, 143, 73, 0.5);
+}
+.main-image img{
+    Width: 650px;   
+    Height: 748px;
+    margin: 82px 50px 72px 32px;
+    border: 1px dotted;
+}
+
+/* <!-------------- About Section For Styles --------------> */
+.woman-image img{
+    width: 338px;
+    height: 536px;
+    margin: 64px 200px 0px 200px;
+}
+.background-banner img{
+    width: 1440px;
+    height: 600px;
+    margin-bottom: 72px;
+}
+
+
+/* <!-------------- My Recipies Section For Styles --------------> */
+.my-recipies{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px dotted;
+}
+.my-recipies h3{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.my-recipies p{
+    width: 706px;
+    margin-bottom: 38px;
+}
+.food-itmes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 54px;
+    justify-content: center;
+    gr
+    align-items: center;
+}
+.food-itme{
+    width: 357px;
+    height: 508px;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+}
+.food-itmes img{
+    width: 357px;
+    height: 256px;
+    margin-bottom: 40px;
+    border-radius: 16px;
+}
+.food-itme h4{
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 10px;
 
 }
+
+
+/* <!-------------- Footer Section For Styles --------------> */
+footer{
+    height: 256px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 92px;
+    background-color: #0B0D17;
+    
+}
+footer h3{
+    font-weight: 800;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-top: 37px;
+    margin-bottom: 37px;
+}
+.orange{
+    background: -webkit-linear-gradient(#FBA24F, #FF1E1E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
