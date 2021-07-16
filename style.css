@@ -28,7 +28,6 @@ p{
 .heading{
     width: 600px;
     height: 455px;
-    border: 1px dotted;
 }
 .heading h1{
     font-weight: 700;
@@ -43,12 +42,10 @@ p{
 .link-button{
     text-decoration: none;
     font-weight: 600;
-    font-size: 18px;
-    color: 
-    #FFFFFF;
-    padding: 12px 20px;
-    background-image: linear-gradient(#FBA24F
-, #FF1E1E);
+    font-size: 20px;
+    color:#FFFFFF;
+    padding: 20px 30px;
+    background-image: linear-gradient(0.25turn, #FBA24F, #FF1E1E);
     border-radius: 50px;
     box-shadow: 0px 2px 30px rgba(252, 143, 73, 0.5);
 }
@@ -56,64 +53,73 @@ p{
     Width: 650px;   
     Height: 748px;
     margin: 82px 50px 72px 32px;
-    border: 1px dotted;
 }
+/* <!-------------- Header Section End --------------> */
 
 /* <!-------------- About Section For Styles --------------> */
 .woman-image img{
     width: 338px;
     height: 536px;
-    margin: 64px 200px 0px 200px;
+    margin-top: 64px; 
+    margin-right: 180px;
 }
-.background-banner img{
-    width: 1440px;
+.about-me h3{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.about-me p{
+    width: 600px;
+    margin-bottom: 90px;
+}
+.background-banner{
+    background-image: url(images/background-image.png);
+    background-repeat: no-repeat;
     height: 600px;
     margin-bottom: 72px;
-}
-
-
-/* <!-------------- My Recipies Section For Styles --------------> */
-.my-recipies{
     justify-content: center;
     align-items: center;
-    text-align: center;
-    border: 1px dotted;
 }
+/* <!-------------- About Section End --------------> */
+
+/* <!-------------- My Recipies Section For Styles --------------> */
 .my-recipies h3{
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 30px;
+    text-align: center;
 }
 .my-recipies p{
     width: 706px;
+    padding: 0 600px;
     margin-bottom: 38px;
+    text-align: center;
 }
-.food-itmes{
+.food-items{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 54px;
     justify-content: center;
-    gr
     align-items: center;
+    margin: 0 290px;
 }
-.food-itme{
+.food-item{
     width: 357px;
     height: 508px;
     border-radius: 30px;
     padding: 20px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
 }
-.food-itmes img{
+.food-items img{
     width: 357px;
     height: 256px;
     margin-bottom: 40px;
     border-radius: 16px;
 }
-.food-itme h4{
+.food-item h4{
     font-size: 28px;
     font-weight: 800;
     margin-bottom: 10px;
-
 }
 
 
@@ -130,7 +136,7 @@ footer h3{
     font-weight: 800;
     font-size: 30px;
     color: #FFFFFF;
-    margin-top: 37px;
+    padding-top: 37px;
     margin-bottom: 37px;
 }
 .orange{
@@ -139,6 +145,12 @@ footer h3{
     -webkit-text-fill-color: transparent;
 }
 
+/* <!-------------- Responsive For Mobile Devices --------------> */
 
-
-
+@media only screen and (max-width: 688px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+}
