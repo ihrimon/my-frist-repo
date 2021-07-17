@@ -75,10 +75,9 @@ p{
 .background-banner{
     background-image: url(images/background-image.png);
     background-repeat: no-repeat;
-    height: 600px;
     margin-bottom: 72px;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 /* <!-------------- About Section End --------------> */
 
@@ -99,12 +98,10 @@ p{
     text-align: center;
 }
 .food-items{
-    width: 80%;
-    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    align-items: center;
+    grid-template-columns: repeat(3, 398px);
+    grid-column-gap: 40px;
+    justify-content: center;
 }
 /* .food-items{
     display: grid;
@@ -141,7 +138,6 @@ footer{
     text-align: center;
     margin-top: 92px;
     background-color: #0B0D17;
-    
 }
 footer h3{
     font-weight: 800;
@@ -151,9 +147,7 @@ footer h3{
     margin-bottom: 37px;
 }
 .orange{
-    background: -webkit-linear-gradient(#FBA24F, #FF1E1E);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ff5e1e;
 }
 
 /* <!-------------- Responsive For Mobile Devices --------------> */
