@@ -37,9 +37,10 @@ p{
 }
 .heading p{
     width: 520px;
-    margin-bottom: 49px;
 }
 .link-button{
+    display: inline-block;
+    margin-top: 30px;
     text-decoration: none;
     font-weight: 600;
     font-size: 20px;
@@ -70,7 +71,6 @@ p{
 }
 .about-me p{
     width: 600px;
-    margin-bottom: 90px;
 }
 .background-banner{
     background-image: url(images/background-image.png);
@@ -83,26 +83,37 @@ p{
 /* <!-------------- About Section End --------------> */
 
 /* <!-------------- My Recipies Section For Styles --------------> */
+.my-recipies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .my-recipies h3{
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 30px;
-    text-align: center;
 }
 .my-recipies p{
-    width: 706px;
-    padding: 0 600px;
+    width: 800px;
     margin-bottom: 38px;
     text-align: center;
 }
 .food-items{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    align-items: center;
+}
+/* .food-items{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 54px;
     justify-content: center;
     align-items: center;
     margin: 0 290px;
-}
+} */
 .food-item{
     width: 357px;
     height: 508px;
@@ -148,9 +159,12 @@ footer h3{
 /* <!-------------- Responsive For Mobile Devices --------------> */
 
 @media only screen and (max-width: 688px) {
-    .container{
-        display: flex;
+    .heading{
+        margin: 0 100pc;
         justify-content: center;
         align-items: center;
-    } 
+        text-align: center;
+    }
 }
+
+
